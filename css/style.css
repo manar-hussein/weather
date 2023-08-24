@@ -1,0 +1,85 @@
+:root{
+    --mainColor--:#1e202b;
+    --secondaryColor--:rgb(50 53 68);
+    --buttonColor--:#009ad8;
+    --pargraphColor--:#bfc1c8;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--mainColor--);
+    font-weight: bold;
+}
+nav .nav-link{
+    color: white;
+    font-size: 16px !important;
+    transition: all 0.5s;
+}
+nav .nav-link:hover{
+    color: var(--buttonColor--) !important;
+    border: 2px solid var(--buttonColor--);
+    border-radius: 200px;
+}
+nav .navbar-brand img{
+    width: 30%;
+}
+nav .navbar-brand P{
+    font-size: 10px;
+}
+nav .active {
+    color: var(--buttonColor--) !important;
+    border: 2px solid var(--buttonColor--);
+    border-radius: 200px;
+}
+header{
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+header input{
+    background-color: var(--mainColor--) !important;
+}
+header input::placeholder
+{
+    color: white !important;
+}
+header button{
+    background-color: var(--buttonColor--) !important;
+    top: 50%;
+    right: 0.5%;
+    transform: translateY(-50%);
+}
+.customImg{
+    width: 40%;
+}
+.costumicon{
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 0%;
+    margin: 0%;
+}
+
+header .row .col-md-4 .header{
+    background-color:rgba(75, 76, 78, 0.5);
+    color: white;
+    border: solid 3px white;
+    border-bottom: none;
+}
+header .row .col-md-4 .body{
+    background-color: var(--mainColor--);
+    color: white;
+    border: solid 3px white;
+    border-top: none;
+}
+.addcard{
+    height: 320px;
+}
+.iconwidth{
+    width: 90px;
+}
+.card{
+    background-color: var(--mainColor--);
+}
+.iconwidth2{
+    width: 50px;
+}
