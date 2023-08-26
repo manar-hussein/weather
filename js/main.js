@@ -92,8 +92,8 @@ function getDayName()
 
 async function getWeather(location)
 {
-    let wethaerInfo=await fetch(`https://api.weatherapi.com/v1/current.json?key=fffed32f803045a9a83203730231508&q=${location}`);
-    let weatherForcast=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=fffed32f803045a9a83203730231508&q=${location}&days=3`);
+    let wethaerInfo=await fetch(`HTTPS://api.weatherapi.com/v1/current.json?key=fffed32f803045a9a83203730231508&q=${location}`);
+    let weatherForcast=await fetch(`HTTPS://api.weatherapi.com/v1/forecast.json?key=fffed32f803045a9a83203730231508&q=${location}&days=3`);
     const Weatherr=await wethaerInfo.json(); 
     const forcast=await weatherForcast.json(); 
     let currentWeather = new Weather(dayByName,month,Weatherr.location.name,Weatherr.current.temp_c,Weatherr.current.condition.text,Weatherr.current.condition.icon,Weatherr.current.humidity,Weatherr.current.wind_dir,Weatherr.current.wind_kph);
